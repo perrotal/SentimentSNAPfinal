@@ -1,0 +1,202 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  max-width: 100vw;
+  font-family: 'Nunito', sans-serif;
+  background-color: #FCFCFC;
+}
+#camera, #camera--view, #camera--sensor, #camera--output{
+    position: fixed;
+    height: 92.5vh;
+    width: 100%;
+    object-fit:cover;
+    display: flex;
+    justify-content: center;
+}
+#camera--view, #camera--sensor, #camera--output{
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+#camera--trigger{
+    background-color: #73A0F9;
+    color: white;
+    font-size: 32px;
+    border-radius: 50px;
+    border: none;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 100px;
+    justify-content: center;
+    z-index: 10;
+}
+
+#camera--trigger:hover{
+    background-color: #8C7AFF;
+    color: white;
+    font-size: 32px;
+    border-radius: 50px;
+    border: none;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 100px;
+    justify-content: center;
+    z-index: 10;
+}
+
+.hide{
+  display: none;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#cameraView{
+  z-index: 1;
+}
+
+.reveal{
+  display: block;
+  z-index: 10;
+  opacity: 1 !important;
+}
+
+.taken{
+    height: 100%!important;
+    width: 100%!important;
+    transition: all 0.5s ease-in;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    z-index: 2;
+    display: none;
+}
+
+.answer{
+  position: fixed;
+  margin-top: 40%;
+}
+
+#happy{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -20%;
+}
+
+
+h1{
+  font-size: 2em;
+  background-color: #72A1F9;
+  color: white;
+  padding: 20px;
+  padding-bottom: 30px;
+  border-radius: 25px;
+  font-weight: 700;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+.content{
+  height: 93vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: fixed;
+}
+
+.bottomNav{
+  height: 60px;
+  align-self: flex-end;
+  background-color: #FCFCFC;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+.topBar{
+  height: 60px;
+  align-self: flex-start;
+  background-color: #FCFCFC;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+
+#topLogo{
+  height: 45px;
+}
+
+h2{
+  font-size: 1.25em;
+  margin-bottom: 0;
+  margin-left: 1em;
+  transition: ease-in-out 0.3s;
+}
+
+.refresh{
+  margin-left: 1em;
+  color: black;
+  font-size: 1.75em;
+}
+
+#mainLogo{
+  width: 90%;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h3{
+  text-align: center;
+  font-size: 2em;
+  padding-top: 0.5em;
+  font-weight:700;
+  width: 100%;
+}
+
+.tagline{
+  text-align: center;
+  font-size: 1.25em;
+  padding-top: 0.5em;
+  width: 100%;
+}
+
+.homebtn{
+  text-align: center;
+  background-color: #73A0F9;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+}
+
+.homebtn:hover{
+  text-align: center;
+  background-color: #8C7AFF;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  color: white;
+  transition: ease-in-out 0.3s;
+}

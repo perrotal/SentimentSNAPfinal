@@ -1,0 +1,52 @@
+h1{
+    font-family: "roboto";
+    font-size: 50px;
+    color: black;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+}
+
+label{
+    font-family: "roboto";
+    font-size: 20px;
+    
+}
+
+h3{
+    font-family: "roboto";
+    text-align: center;
+    font-size: 2em;
+    padding-top: 0;
+    font-weight: 700;
+    width: 100%;
+}
+
+img{
+    width: 100%; 
+}
+
+button{
+  text-align: center;
+  background-color: #73A0F9;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+}
+
+button:hover{
+  text-align: center;
+  background-color: #8C7AFF;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+    
